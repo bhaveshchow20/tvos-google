@@ -1,0 +1,37 @@
+tools/venv
+tools/adbkey/
+__pycache__/
+launcher/.gradle/
+launcher/build/
+launcher/app/build/
+launcher/local.properties
+# your own TV's dumps (serial, android_id, device names) stay local
+backup/
+# session screenshots and working notes (may show the Wi-Fi name or account avatar) stay local
+shots/
+work/
+# Perfetto traces from tools/trace.py: large, and they hold the TV's process list
+traces/
+# Results from tools/bench.py: result.json carries the address the run was given and the TV's fingerprint.
+bench-results/
+.DS_Store
+
+# Generated install bundles and JVM crash reports stay out of contributions.
+*.apk
+*.aab
+launcher/hs_err_pid*.log
+launcher/replay_pid*.log
+
+# Personal theme configs with API keys (e.g. a copy of themes/tvos27/config.json with "tmdb_key") stay local
+my-config.json
+*.local.json
+*.secret.json
+local-config/
+# Signing keys and IDE files
+*.jks
+*.keystore
+keystore.properties
+.idea/
+*.iml
+.vscode/
+launcher/captures/
