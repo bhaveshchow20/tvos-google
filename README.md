@@ -51,6 +51,8 @@ Top Shelf contacts TMDB for provider, title and image data when you supply a key
 
 ## Install on your TV
 
+**Want guided setup?** [Copy the installation prompt](PROMPT.md) into a coding agent with terminal access. It can handle the computer-side commands while you pair the TV and check the launcher with your remote.
+
 You need a Google TV or Android TV device running Android 8.0 or later, a computer on the same network, Git, Python 3, and Android platform tools with `adb` on your PATH. The commands below use Bash on macOS or Linux. On Windows you can use Git Bash with your Windows installation of ADB and a Python virtual environment.
 
 ### 1. Get the launcher
