@@ -1,9 +1,9 @@
 # Set up tvOS for Google TV with a coding agent
 
-Copy the prompt below into a coding agent running on a computer on the same network as your TV. You can also follow the [manual installation guide](docs/INSTALL.md).
+Copy the prompt below into a coding agent running on a computer on the same network as your TV. You can also follow the [manual installation guide](README.md#install-on-your-tv).
 
 ```text
-Help me install **tvOS for Google TV** on my Google TV or Android TV. Use the project at https://github.com/bhaveshchow20/tvos-google and read its installation guide at https://github.com/bhaveshchow20/tvos-google/blob/main/docs/INSTALL.md before running commands.
+Help me install **tvOS for Google TV** on my Google TV or Android TV. Use the project at https://github.com/bhaveshchow20/tvos-google and read its installation guide at https://github.com/bhaveshchow20/tvos-google#install-on-your-tv before running commands.
 
 Ask for my TV model, Android version, and the debugging endpoint shown on the TV. Walk me through pairing if my TV uses Wireless debugging. Let me enter the pairing code locally. Select the exact endpoint on every ADB command and confirm that the connected device matches my TV before changing anything.
 
