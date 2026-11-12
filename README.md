@@ -1,3 +1,37 @@
+# tvOS for Google TV
+
+An independent Google TV launcher built from CleanYourTV, inspired by Apple TV’s Liquid Glass interface, Top Shelf, and Control Center. The launcher runs natively on Android TV and Google TV.
+
+![Top Shelf and the floating Liquid Glass dock on a physical TV](docs/screenshots/tvos27-showcase/home-top-shelf.png)
+
+## The launcher
+
+- **Liquid Glass Home** uses a floating translucent dock, a lift and highlight on the focused tile, and large controls designed for a TV remote.
+- **TMDB Top Shelf** displays full-screen artwork and title logos for popular movies and shows on the focused streaming service. It uses an optional TMDB key and matches providers by region.
+- **Control Center** puts HDMI inputs, sleep, Wi-Fi, display settings, and the app library in one panel. Enable Android notification access to see Now Playing artwork and playback controls.
+- **Home editing and appearance** let you rearrange apps, create folders, choose Light, Dark, or Automatic appearance, and send wallpaper from a phone on the same Wi-Fi.
+
+![Control Center with HDMI shortcuts and Now Playing](docs/screenshots/tvos27-showcase/control-center.png)
+
+## Build and set up
+
+Build the Android launcher with JDK 17 and Android SDK platform 34. Run these commands from the repository root.
+
+```sh
+cd launcher
+./gradlew assembleRelease
+```
+
+The APK is written to `launcher/app/build/outputs/apk/release/app-release.apk`. The build uses Android debug signing. Android requires the same signing key for an in-place update of an existing launcher installation.
+
+After installing the APK, apply the included configuration from the repository root with `TV_HOST=<tv-ip> tools/theme.sh themes/tvos27`. For TMDB artwork, copy the theme to a local folder, add your own key to that copy, and apply the local theme folder. [Theme setup and configuration](themes/tvos27/README.md)
+
+## Source and attribution
+
+This project builds on the native Android launcher in [CleanYourTV](https://cleanyour.tv/). The upstream Git history and [license](LICENSE) are included. The reference project’s README follows below.
+
+---
+
 <p align="center">
   <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
 </p>
